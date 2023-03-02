@@ -4,16 +4,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    
 }
 
 body {
     background: url('../pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 main {
@@ -27,29 +28,42 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 311px;
-    height: 627px;
+    width: 210px;
+    height: 423px;
     background-color: chocolate;
-    background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
+    background: url('../pacote-d013/imagens/frame-iphone2.png') no-repeat;
      
 }
 
 iframe#tela {
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 270px;
-    height: 471px;
+    top: 54px;
+    left: 16px;
+    width: 178px;
+    height: 317px;
 }
 
 section#redes-sociais {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-right: 15px;
+    margin-top: 15px;    
 }
 
 section#redes-sociais img {
-    width: 50px;
+    width: 40px;
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.500);
+    transform: translate(-3px, -3px);
+    width: 45px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.400);
+    transition: transform 1.2s, border 1.2s;
+    
 }
