@@ -14,13 +14,16 @@ body {
     background: url('../pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 main {
     height: 100vh;
     position: relative;
-    
 }
 
 section#telefone {
